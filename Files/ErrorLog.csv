@@ -1,0 +1,5 @@
+# Input File Name,Processed Time,
+users (1).csv,Tue May 09 11:57:25 PDT 2023
+
+# Row,Field,Error,
+2,Email,User email peter@gmail.com already exists and is associated with a different business.

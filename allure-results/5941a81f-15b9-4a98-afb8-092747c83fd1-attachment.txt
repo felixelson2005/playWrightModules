@@ -1,0 +1,10 @@
+product name is Samsung galaxy s6
+product name is Nokia lumia 1520
+product name is Nexus 6
+product name is Samsung galaxy s7
+product name is Iphone 6 32gb
+product name is Sony xperia z5
+product name is HTC One M9
+product name is Sony vaio i5
+product name is Sony vaio i7
+

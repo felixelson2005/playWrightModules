@@ -1,0 +1,64 @@
+
+Playwright test commands:
+
+To run the playwright tests in headless - 'npx playwright test'
+
+To run the playwright tests in headmode -'npx playwright test --headed'
+
+To display the html report -  'npx playwright show-report'
+
+To run the specific test
+'npx playwright test specific.spec.js'
+
+To run the test on specific browsers
+'npx playwright test specific.spec.js --project=chromium --headed' 
+(we can specific the browser names to run)
+
+
+##locators
+button/link
+
+1st - 
+page.locator('locator name'), if property based locator- pass like @id='testname', css/xpath- pass directly the values,
+
+2nd
+page.click('Pass the locator name')
+
+inputfields
+1st-
+page.locator(locatorname).fill(values to be passed);
+
+2nd
+page.fill('locatorname',valuestobepassed);
+
+3rd
+page.type('locatorname','valuestobepassed');
+
+
+To run the tests with tagging
+npx playwright test tests/Exmaple_tagging.spec.js --project=chromium --headed --grep @reg@sanity
+
+
+To exclude the tests based on tags- 
+npx playwright test tests/Exmaple_tagging.spec.js --project=chromium --headed --grep @reg --grep-invert @sanity
+
+To install the allure report- run below npm command
+
+1. npm i -D @playwright/test allure-playwright
+
+2. update the config file to add the allure report
+['allure-playwright',{outputFile:'my-allure-results'}]
+
+3. Install allure command line
+npm install -g allure-commandline --save-dev (need admin access for bin files)
+
+4.To generate the allure report using allure command
+allure generate my-allure-results -o allure-report --clean
+or
+npx allure generate --clean
+
+5. open allure report
+allure open allure-report
+or 
+npx allure serve allure-report
+

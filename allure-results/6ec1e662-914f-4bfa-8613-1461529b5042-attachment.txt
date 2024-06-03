@@ -1,0 +1,3 @@
+product name is Samsung galaxy s6
+product name is Nokia lumia 1520
+product name is Nexus 6

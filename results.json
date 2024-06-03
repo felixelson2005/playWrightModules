@@ -1,0 +1,239 @@
+{
+  "config": {
+    "configFile": "/Users/aelson/Documents/PlaywrightFolder/playwright.config.js",
+    "rootDir": "/Users/aelson/Documents/PlaywrightFolder/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "/Users/aelson/Documents/PlaywrightFolder/node_modules/allure-playwright/dist/index.js",
+        {
+          "outputFile": "my-allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/aelson/Documents/PlaywrightFolder/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/aelson/Documents/PlaywrightFolder/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.43.1",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Example_API_tests.spec.js",
+      "file": "Example_API_tests.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Get users",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 283,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  page: 2,\n  per_page: 6,\n  total: 12,\n  total_pages: 2,\n  data: [\n    {\n      id: 7,\n      email: 'michael.lawson@reqres.in',\n      first_name: 'Michael',\n      last_name: 'Lawson',\n      avatar: 'https://reqres.in/img/faces/7-image.jpg'\n    },\n    {\n      id: 8,\n      email: 'lindsay.ferguson@reqres.in',\n      first_name: 'Lindsay',\n      last_name: 'Ferguson',\n      avatar: 'https://reqres.in/img/faces/8-image.jpg'\n    },\n    {\n      id: 9,\n      email: 'tobias.funke@reqres.in',\n      first_name: 'Tobias',\n      last_name: 'Funke',\n      avatar: 'https://reqres.in/img/faces/9-image.jpg'\n    },\n    {\n      id: 10,\n      email: 'byron.fields@reqres.in',\n      first_name: 'Byron',\n      last_name: 'Fields',\n      avatar: 'https://reqres.in/img/faces/10-image.jpg'\n    },\n    {\n      id: 11,\n      email: 'george.edwards@reqres.in',\n      first_name: 'George',\n      last_name: 'Edwards',\n      avatar: 'https://reqres.in/img/faces/11-image.jpg'\n    },\n    {\n      id: 12,\n      email: 'rachel.howell@reqres.in',\n      first_name: 'Rachel',\n      last_name: 'Howell',\n      avatar: 'https://reqres.in/img/faces/12-image.jpg'\n    }\n  ],\n  support: {\n    url: 'https://reqres.in/#support-heading',\n    text: 'To keep ReqRes free, contributions towards server costs are appreciated!'\n  }\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-05-28T05:00:15.211Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40603012f076832a6c0f-c2d67e2af6712ecb7c2c",
+          "file": "Example_API_tests.spec.js",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Create users -post",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 393,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  name: 'John',\n  job: 'tailer',\n  id: '141',\n  createdAt: '2024-05-28T05:00:17.617Z'\n}\n"
+                    },
+                    {
+                      "text": "the id value is : 141\n"
+                    },
+                    {
+                      "text": "the Created at : 2024-05-28T05:00:17.617Z\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-05-28T05:00:15.500Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40603012f076832a6c0f-43264eb8958e2a27ed6e",
+          "file": "Example_API_tests.spec.js",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "Update users -put",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 445,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  name: 'John Rani',\n  job: 'Engineer',\n  updatedAt: '2024-05-28T05:00:18.038Z'\n}\n"
+                    },
+                    {
+                      "text": "the id value is : undefined\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-05-28T05:00:15.896Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40603012f076832a6c0f-4a417f54fe7ec4bd3a9b",
+          "file": "Example_API_tests.spec.js",
+          "line": 33,
+          "column": 5
+        },
+        {
+          "title": "Delete users",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 502,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-05-28T05:00:16.343Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40603012f076832a6c0f-19091d19499a1d9fc53e",
+          "file": "Example_API_tests.spec.js",
+          "line": 48,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-05-28T05:00:15.020Z",
+    "duration": 1845.971,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

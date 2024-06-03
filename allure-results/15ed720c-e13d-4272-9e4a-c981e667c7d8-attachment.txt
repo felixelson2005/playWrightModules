@@ -1,0 +1,8 @@
+{
+  name: 'John',
+  job: 'tailer',
+  id: '157',
+  createdAt: '2024-05-28T04:55:51.458Z'
+}
+the id value is : 157
+the Created at : 2024-05-28T04:55:51.458Z
